@@ -2,15 +2,22 @@
 /* Type selectors */
 /******************/
 
+:root {
+    --main-color: #333;
+}
+
 body {
     text-align: center;
-    color: #333;
+    color: var(--main-color);
     font-family: Roboto, Helvetica, Arial, sans-serif;
     font-size: 20px;
 }
 
 h1 {
-    text-decoration: underline;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
 }
 
 
@@ -31,7 +38,7 @@ h1 {
 /*******************/
 
 .course-summary {
-    border: 1px solid #333;
+    border: 1px solid var(--main-color);
     border-radius: 10px;
     margin: 20px;
     padding: 20px;
@@ -52,5 +59,9 @@ h1 {
     max-height: 140px;
     width: auto;
     margin: auto;
+    transition: all 1s;
 }
 
+.course-summary img:hover {
+    box-shadow: 4px 4px 8px 0px var(--main-color);
+}
